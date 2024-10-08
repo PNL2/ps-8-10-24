@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-10-24</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <details>
+        <summary><a href="./1.png" target="_self">
+                1.The sum of digits in a number
+            </a><br><br></summary>
+        <pre>
+            num=prompt(),sum=1;
+            for(i=2;i<=num/2;i++){
+                if(num%i==0){
+                    sum+=i + (num/i)
+                }
+            }
+            if(sum>num)
+                console.log("Abundant Number");
+            else
+                console.log("Not Abundant Number")
+        </pre>
+    </details>
+</body>
+
+</html>
